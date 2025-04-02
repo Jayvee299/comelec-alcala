@@ -377,7 +377,7 @@ p {
 
 @media (max-width: 576px) {
 	.descrip {
-		font-size: 1.2rem;
+		font-size: 17px;
 		margin-top: 10px;
 		max-width: 90%;
 		margin-left: 10px;
@@ -387,7 +387,7 @@ p {
 	}
 
 	.descrip2 {
-		font-size: 18px;
+		font-size: 16px;
 		font-weight: bold;
 		color: white;
 		text-transform: capitalize;
