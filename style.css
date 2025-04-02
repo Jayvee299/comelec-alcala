@@ -52,7 +52,7 @@ a {
 }
 
 /* Larger font size for tablet and above */
-@media (min-width: 390px) {
+@media (min-width: 320px) {
 	.brand h1 {
 		font-size: 2rem;
 		margin-left: -5px;
@@ -60,7 +60,7 @@ a {
 
 	.brand img {
 		max-width: 50px;
-		margin-left: -2px;
+		margin-left: -10px;
 	}
 }
 
@@ -313,7 +313,20 @@ p {
 	}
 
 }
+@media (max-width: 375px) {
+	.text {
+		font-size: 18px;
+		letter-spacing: 3px;
+		margin-left: -10px;
+		margin-left: 3px;
+	}
 
+	#hero img {
+		max-width: 220px;
+		margin-top: 200px;
+	}
+
+}
 /* .descrip (Description) */
 .descrip {
 	font-size: 4rem;
