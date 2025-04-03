@@ -171,7 +171,7 @@ p {
 	height: 60px;
 	width: 60px;
 	display: inline-block;
-	border: 3px solid white;
+	border: 3px solid rgb(255, 255, 255);
 	border-radius: 50%;
 	position: relative;
 	display: flex;
@@ -313,6 +313,7 @@ p {
 	}
 
 }
+
 @media (max-width: 375px) {
 	.text {
 		font-size: 18px;
@@ -327,6 +328,7 @@ p {
 	}
 
 }
+
 /* .descrip (Description) */
 .descrip {
 	font-size: 4rem;
@@ -494,6 +496,7 @@ p {
 		margin-top: 100px;
 		padding: 4px;
 	}
+
 	#map h4 {
 		display: inline;
 		align-items: center;
@@ -1156,7 +1159,7 @@ p {
 		align-items: center;
 		transform: scale(1);
 		position: relative;
-		margin-top:200px;
+		margin-top: 200px;
 	}
 
 	/* Make sure the image inside the modal doesn’t exceed the container */
@@ -1328,27 +1331,32 @@ p {
 
 /* End Projects section */
 
+
+
+#result {
+	padding: 120px;
+}
+
 #result .container3 {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	max-width: 1250px;
+	margin: 0 auto;
 	padding: 50px;
 	/* Adjust padding for better spacing */
 	gap: 20px;
 	/* Add space between items */
 }
 
-#result .container3 .section-title2 {
+#result .section-title2 {
 	text-align: center;
-	font-size: 3rem;
+	font-size: 5rem;
 	/* Adjust font size for better fit */
 	font-weight: 300;
 	color: rgb(0, 0, 0);
-	margin-bottom: 40px;
 	text-transform: uppercase;
 	letter-spacing: 1rem;
-	width: 100%;
-	padding-top: 20px;
 }
 
 /* Align councilor container properly */
@@ -1370,180 +1378,6 @@ p {
 	border-radius: 8px;
 	background-color: #f9f9f9;
 	/* Light background for readability */
-}
-
-/* For larger screens (desktop), sections take up 48% of the container */
-@media (min-width: 768px) {
-
-	.section,
-	.section2 {
-		width: 48%;
-		/* Ensure each section takes up 48% of the container on larger screens */
-	}
-}
-
-/* For smaller screens (mobile), sections take up 100% */
-@media (max-width: 768px) {
-
-	.section,
-	.section2 {
-		width: 100%;
-		/* Full width on mobile */
-	}
-}
-
-.candidates-list {
-	max-height: 500px;
-	overflow-y: auto;
-	transition: max-height 0.3s ease-in-out;
-}
-
-/* Toggle button style */
-.toggle-button {
-	text-align: center;
-	cursor: pointer;
-	font-size: 24px;
-	padding: 10px;
-	background-color: #f0f0f0;
-	border: 1px solid #ccc;
-	border-radius: 4px;
-	margin-top: 10px;
-	display: inline-block;
-}
-
-.toggle-button:hover {
-	background-color: #ddd;
-}
-
-/* For the expanded candidate list */
-.candidates-list.expand {
-	max-height: 10000px;
-}
-
-/* Styling for candidate list when collapsed */
-.candidates-list.collapsed .candidate:nth-child(n+5) {
-	display: none;
-}
-
-.header {
-	background-color: #2364ae;
-	color: white;
-	padding: 10px;
-	text-align: center;
-	margin-bottom: 10px;
-}
-
-.header h2 {
-	margin: 0;
-}
-
-.candidate {
-	margin-bottom: 15px;
-}
-
-.candidate-name {
-	font-weight: bold;
-}
-
-.votes {
-	font-size: 20px;
-}
-
-.progress-bar {
-	height: 10px;
-	background-color: #cabfbf;
-	border-radius: 5px;
-	overflow: hidden;
-	margin-top: 5px;
-}
-
-.progress-bar-fill {
-	height: 100%;
-	background-color: #4c90fe;
-}
-
-.social-media {
-	display: flex;
-	justify-content: space-between;
-	margin-top: 10px;
-}
-
-.social-media a {
-	margin: 0 5px;
-}
-
-/* Footer Style */
-.footer {
-	text-align: center;
-	font-size: 12px;
-	margin-top: 40px;
-	padding-top: 20px;
-	border-top: 1px solid #ddd;
-	color: #666;
-}
-
-#result .container3 {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	padding: 50px;
-	/* Adjust padding for better spacing */
-	gap: 20px;
-	/* Add space between items */
-}
-
-#result .container3 .section-title2 {
-	text-align: center;
-	font-size: 3rem;
-	/* Adjust font size for better fit */
-	font-weight: 300;
-	color: rgb(0, 0, 0);
-	margin-bottom: 40px;
-	text-transform: uppercase;
-	letter-spacing: 1rem;
-	width: 100%;
-	padding-top: 20px;
-}
-
-/* Align councilor container properly */
-.councilor-container {
-	align-self: flex-start;
-	width: 100%;
-	/* Ensure it takes the full width */
-	margin-top: 20px;
-}
-
-/* General section style */
-.section,
-.section2 {
-	width: 48%;
-	/* Adjust width for more balanced layout */
-	margin-bottom: 20px;
-	padding: 30px;
-	border: 1px solid #000;
-	border-radius: 8px;
-	background-color: #f9f9f9;
-	/* Light background for readability */
-}
-
-/* For larger screens (desktop), sections take up 48% of the container */
-@media (min-width: 768px) {
-
-	.section,
-	.section2 {
-		width: 48%;
-		/* Ensure each section takes up 48% of the container on larger screens */
-	}
-}
-
-/* For smaller screens (mobile), sections take up 100% */
-@media (max-width: 768px) {
-
-	.section,
-	.section2 {
-		width: 100%;
-		/* Full width on mobile */
-	}
 }
 
 .candidates-list {
@@ -1643,17 +1477,18 @@ p {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
-		max-width: 3000px;
+		max-width: 400px;
+		align-items: center;
+		margin-left: -50px;
 	}
 
 	#result .section {
-		width: 900px;
+		width: 280px;
 		margin-bottom: 20px;
 		border: 1px solid #000;
 		/* Adds a black border of 2px */
 		border-radius: 8px;
-		margin: 10px;
-		/* Optional: Adds rounded corners to the border */
+		align-items: center;
 	}
 
 	.section2 {
