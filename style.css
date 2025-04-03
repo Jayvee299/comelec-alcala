@@ -1477,7 +1477,7 @@ p {
 	  display: flex;
 	  flex-direction: column; /* Stack the sections vertically */
 	  align-items: center;
-	  margin-left: -85px; /* Remove the left margin */
+	  margin-left: -100px; /* Remove the left margin */
 	  padding: 0%; /* Adjust padding for better spacing */
 	}
   
