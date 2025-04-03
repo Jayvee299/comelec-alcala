@@ -1470,94 +1470,96 @@ p {
 	color: #666;
 }
 
-
 /* For smaller screen sizes */
 @media (max-width: 576px) {
 	#result .container3 {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
-		max-width: 400px;
-		align-items: center;
-		margin-left: -50px;
+	  width: 200%; /* Ensure the container uses the full width */
+	  display: flex;
+	  flex-direction: column; /* Stack the sections vertically */
+	  align-items: center;
+	  margin-left: -80px; /* Remove the left margin */
+	  padding: 5%; /* Adjust padding for better spacing */
 	}
-
-	#result .section {
-		width: 280px;
-		margin-bottom: 20px;
-		border: 1px solid #000;
-		/* Adds a black border of 2px */
-		border-radius: 8px;
-		align-items: center;
+  
+	#result .section,
+	#result .section2 {
+	  width: 100%; /* Ensure the sections take full width */
+	  margin-bottom: 10px;
+	  border: 1px solid #000;
+	  border-radius: 8px;
+	  align-items: center;
+	  margin-left: 0; /* Remove the left margin */
 	}
-
-	.section2 {
-		width: 100%;
-		margin-bottom: 20px;
-		border: 1px solid #000;
-		/* Adds a black border of 2px */
-		border-radius: 8px;
-		margin: 10px;
-		/* Optional: Adds rounded corners to the border */
-
+  
+	/* Adjust Mayor section and Vice Mayor section */
+	#mayor-section {
+	  margin-bottom: 20px; /* Space between Mayor and Vice Mayor sections */
 	}
-
-
+  
+	#vice-mayor-section {
+	  margin-top: 20px; /* Ensure Vice Mayor section has space from Mayor */
+	}
+  
+	/* Ensure the Mayor and Vice Mayor sections are displayed correctly */
+	#mayor-section, #vice-mayor-section {
+	  width: 100%;
+	  display: block;
+	}
+  
+	#result .section-title2 {
+	  text-align: center;
+	  font-size: 4rem; /* Adjust font size for better fit */
+	  font-weight: 300;
+	  color: rgb(0, 0, 0);
+	  text-transform: uppercase;
+	  letter-spacing: 1rem;
+	  margin-left: -14px;
+	}
+  
 	.toggle-button {
-		font-size: 18px;
-		/* Adjust button font size */
-		padding: 8px;
-		/* Reduce padding */
+	  font-size: 18px; /* Adjust button font size */
+	  padding: 8px; /* Reduce padding */
 	}
-
+  
 	.header {
-		padding: 8px;
-		/* Reduce header padding */
+	  padding: 8px; /* Reduce header padding */
 	}
-
+  
 	.candidate-name {
-		font-size: 16px;
-		/* Adjust candidate name font size */
+	  font-size: 16px; /* Adjust candidate name font size */
 	}
-
+  
 	.votes {
-		font-size: 18px;
-		/* Adjust votes font size */
+	  font-size: 18px; /* Adjust votes font size */
 	}
-
+  
 	.progress-bar {
-		height: 8px;
-		/* Reduce progress bar height */
+	  height: 8px; /* Reduce progress bar height */
 	}
-
+  
 	.progress-bar-fill {
-		background-color: #4c90fe;
+	  background-color: #4c90fe;
 	}
-
+  
 	.social-media {
-		flex-direction: column;
-		/* Stack social media icons vertically */
-		align-items: center;
-		/* Center align the icons */
+	  flex-direction: column; /* Stack social media icons vertically */
+	  align-items: center; /* Center align the icons */
 	}
-
+  
 	.social-media a {
-		margin: 5px 0;
-		/* Add vertical margin between social media icons */
+	  margin: 5px 0; /* Add vertical margin between social media icons */
 	}
-
+  
 	.footer {
-		font-size: 10px;
-		/* Reduce font size for smaller screens */
+	  font-size: 10px; /* Reduce font size for smaller screens */
 	}
-
+  
 	/* Ensure the list takes full width on small screens */
 	.candidates-list {
-		max-height: 300px;
-		/* Adjust max height for smaller screens */
+	  max-height: 300px; /* Adjust max height for smaller screens */
 	}
-}
-
+  }
+  
 
 
 
