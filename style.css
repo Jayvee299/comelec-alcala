@@ -1332,7 +1332,50 @@ p {
 /* End Projects section */
 
 
+#result {
+	padding: 120px;
+}
 
+.section-title2 {
+	text-align: center;
+	font-size: 5rem;
+	font-weight: 300;
+	color: rgb(0, 0, 0);
+	text-transform: uppercase;
+	letter-spacing: 1rem;
+	margin-bottom: 60px;
+}
+
+.container3 {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+	/* Makes a responsive grid */
+	gap: 20px;
+	/* Spacing between the images */
+	justify-items: center;
+	/* Centers images horizontally within each grid item */
+	align-items: center;
+	/* Centers images vertically within each grid item */
+}
+
+.container3 img {
+	width: 100%;
+	height: auto;
+	/* Ensures images maintain aspect ratio */
+	border-radius: 10px;
+	/* Optional, for rounded corners */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	/* Optional, for a subtle shadow effect */
+	transition: transform 0.3s ease-in-out;
+	/* Optional, for hover effect */
+}
+
+.container3 img:hover {
+	transform: scale(1.05);
+	/* Optional, for a zoom-in effect on hover */
+}
+
+/* 
 #result {
 	padding: 120px;
 }
@@ -1344,40 +1387,34 @@ p {
 	max-width: 1250px;
 	margin: 0 auto;
 	padding: 50px;
-	/* Adjust padding for better spacing */
 	gap: 20px;
-	/* Add space between items */
 }
 
 #result .section-title2 {
 	text-align: center;
 	font-size: 5rem;
-	/* Adjust font size for better fit */
 	font-weight: 300;
 	color: rgb(0, 0, 0);
 	text-transform: uppercase;
 	letter-spacing: 1rem;
 }
 
-/* Align councilor container properly */
 .councilor-container {
 	align-self: flex-start;
 	width: 100%;
-	/* Ensure it takes the full width */
 	margin-top: 20px;
 }
 
-/* General section style */
+
 .section,
 .section2 {
 	width: 48%;
-	/* Adjust width for more balanced layout */
 	margin-bottom: 20px;
 	padding: 30px;
 	border: 1px solid #000;
 	border-radius: 8px;
 	background-color: #f9f9f9;
-	/* Light background for readability */
+
 }
 
 .candidates-list {
@@ -1386,7 +1423,7 @@ p {
 	transition: max-height 0.3s ease-in-out;
 }
 
-/* Toggle button style */
+
 .toggle-button {
 	text-align: center;
 	cursor: pointer;
@@ -1403,12 +1440,10 @@ p {
 	background-color: #ddd;
 }
 
-/* For the expanded candidate list */
 .candidates-list.expand {
 	max-height: 10000px;
 }
 
-/* Styling for candidate list when collapsed */
 .candidates-list.collapsed .candidate:nth-child(n+5) {
 	display: none;
 }
@@ -1458,7 +1493,7 @@ p {
 
 .social-media a {
 	margin: 0 5px;
-}
+} */
 
 /* Footer Style */
 .footer {
@@ -1473,93 +1508,113 @@ p {
 /* For smaller screen sizes */
 @media (max-width: 576px) {
 	#result .container3 {
-	  width: 200%; /* Ensure the container uses the full width */
-	  display: flex;
-	  flex-direction: column; /* Stack the sections vertically */
-	  align-items: center;
-	  margin-left: -100px; /* Remove the left margin */
-	  padding: 0%; /* Adjust padding for better spacing */
+		width: 200%;
+		/* Ensure the container uses the full width */
+		display: flex;
+		flex-direction: column;
+		/* Stack the sections vertically */
+		align-items: center;
+		margin-left: -85px;
+		/* Remove the left margin */
+		padding: 0%;
+		/* Adjust padding for better spacing */
 	}
-  
+
 	#result .section,
 	#result .section2 {
-	  width: 100%; /* Ensure the sections take full width */
-	  margin-bottom: 10px;
-	  border: 1px solid #000;
-	  border-radius: 8px;
-	  align-items: center;
-	  margin-left: 0; /* Remove the left margin */
+		width: 100%;
+		/* Ensure the sections take full width */
+		margin-bottom: 10px;
+		border: 1px solid #000;
+		border-radius: 8px;
+		align-items: center;
+		margin-left: 0;
+		/* Remove the left margin */
 	}
-  
+
 	/* Adjust Mayor section and Vice Mayor section */
 	#mayor-section {
-	  margin-bottom: 20px; /* Space between Mayor and Vice Mayor sections */
+		margin-bottom: 20px;
+		/* Space between Mayor and Vice Mayor sections */
 	}
-  
+
 	#vice-mayor-section {
-	  margin-top: 20px; /* Ensure Vice Mayor section has space from Mayor */
+		margin-top: 20px;
+		/* Ensure Vice Mayor section has space from Mayor */
 	}
-  
+
 	/* Ensure the Mayor and Vice Mayor sections are displayed correctly */
-	#mayor-section, #vice-mayor-section {
-	  width: 100%;
-	  display: block;
+	#mayor-section,
+	#vice-mayor-section {
+		width: 100%;
+		display: block;
 	}
-  
+
 	#result .section-title2 {
-	  text-align: center;
-	  font-size: 4rem; /* Adjust font size for better fit */
-	  font-weight: 300;
-	  color: rgb(0, 0, 0);
-	  text-transform: uppercase;
-	  letter-spacing: 1rem;
-	  margin-left: -14px;
+		text-align: center;
+		font-size: 2rem;
+		/* Adjust font size for better fit */
+		font-weight: 300;
+		color: rgb(0, 0, 0);
+		text-transform: uppercase;
+		margin-left: -40px;
 	}
-  
+
 	.toggle-button {
-	  font-size: 18px; /* Adjust button font size */
-	  padding: 8px; /* Reduce padding */
+		font-size: 18px;
+		/* Adjust button font size */
+		padding: 8px;
+		/* Reduce padding */
 	}
-  
+
 	.header {
-	  padding: 8px; /* Reduce header padding */
+		padding: 8px;
+		/* Reduce header padding */
 	}
-  
+
 	.candidate-name {
-	  font-size: 16px; /* Adjust candidate name font size */
+		font-size: 16px;
+		/* Adjust candidate name font size */
 	}
-  
+
 	.votes {
-	  font-size: 18px; /* Adjust votes font size */
+		font-size: 18px;
+		/* Adjust votes font size */
 	}
-  
+
 	.progress-bar {
-	  height: 8px; /* Reduce progress bar height */
+		height: 8px;
+		/* Reduce progress bar height */
 	}
-  
+
 	.progress-bar-fill {
-	  background-color: #4c90fe;
+		background-color: #4c90fe;
 	}
-  
+
 	.social-media {
-	  flex-direction: column; /* Stack social media icons vertically */
-	  align-items: center; /* Center align the icons */
+		flex-direction: column;
+		/* Stack social media icons vertically */
+		align-items: center;
+		/* Center align the icons */
 	}
-  
+
 	.social-media a {
-	  margin: 5px 0; /* Add vertical margin between social media icons */
+		margin: 5px 0;
+		/* Add vertical margin between social media icons */
 	}
-  
+
 	.footer {
-	  font-size: 10px; /* Reduce font size for smaller screens */
+		font-size: 10px;
+		/* Reduce font size for smaller screens */
 	}
-  
+
 	/* Ensure the list takes full width on small screens */
 	.candidates-list {
-	  max-height: 300px; /* Adjust max height for smaller screens */
+		max-height: 300px;
+		/* Adjust max height for smaller screens */
 	}
-  }
-  
+}
+
 
 
 
