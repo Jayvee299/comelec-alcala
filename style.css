@@ -1514,7 +1514,7 @@ p {
 		flex-direction: column;
 		/* Stack the sections vertically */
 		align-items: center;
-		margin-left: -95px;
+		margin-left: -80px;
 		/* Remove the left margin */
 		padding: 0%;
 		/* Adjust padding for better spacing */
