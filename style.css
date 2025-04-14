@@ -596,9 +596,8 @@ p {
 	#reminder .container2 {
 		position: relative;
 		z-index: 1;
-		max-height: 500px;
-		margin-top: -200px;
-		margin-bottom: 200px;
+		margin-top: 20px;
+		margin-bottom: 100px;
 	}
 
 	/* Slider container */
@@ -1514,7 +1513,7 @@ p {
 		flex-direction: column;
 		/* Stack the sections vertically */
 		align-items: center;
-		margin-left: -80px;
+		margin-left: -95px;
 		/* Remove the left margin */
 		padding: 0%;
 		/* Adjust padding for better spacing */
