@@ -318,7 +318,6 @@ p {
 	.text {
 		font-size: 18px;
 		letter-spacing: 3px;
-		margin-left: -10px;
 		margin-left: 3px;
 	}
 
@@ -1226,14 +1225,14 @@ p {
 
 	/* Portrait Close Button Styles */
 	.close-portrait {
-		margin-left: 137px;
+		margin-left: 145px;
 		font-size: 30px;
 		margin-top: -7px;
 	}
 
 	/* Landscape Close Button Styles */
 	.close-landscape {
-		right: 0px;
+		right: -5px;
 		font-size: 30px;
 		margin-top: -15px;
 	}
