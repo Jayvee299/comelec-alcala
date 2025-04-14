@@ -976,33 +976,6 @@ p {
 	letter-spacing: 1rem;
 }
 
-.close {
-	color: #000000;
-	font-size: 70px;
-	font-weight: bolder;
-	cursor: pointer;
-	position: absolute;
-}
-
-.close:hover,
-.close:focus {
-	color: rgb(255, 0, 0);
-	text-decoration: none;
-}
-
-/* Portrait Close Button Styles */
-.close-portrait {
-	top: 15px;
-	margin-left: 350px;
-	font-size: 48px;
-}
-
-/* Landscape Close Button Styles */
-.close-landscape {
-	top: 15px;
-	right: 0px;
-	font-size: 48px;
-}
 
 #modalImage,
 #landscapeModalImage {
@@ -1209,33 +1182,7 @@ p {
 		background-color: #45a049;
 	}
 
-	.close {
-		color: #000000;
-		font-size: 70px;
-		font-weight: bolder;
-		cursor: pointer;
-		position: absolute;
-	}
-
-	.close:hover,
-	.close:focus {
-		color: rgb(255, 0, 0);
-		text-decoration: none;
-	}
-
-	/* Portrait Close Button Styles */
-	.close-portrait {
-		margin-left: 145px;
-		font-size: 30px;
-		margin-top: -7px;
-	}
-
-	/* Landscape Close Button Styles */
-	.close-landscape {
-		right: -5px;
-		font-size: 30px;
-		margin-top: -15px;
-	}
+	
 
 }
 
