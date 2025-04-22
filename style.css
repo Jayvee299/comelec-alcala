@@ -790,6 +790,41 @@ p {
 	transform: translateY(1px);
 }
 
+/* Styling for clickable-image (base style) */
+#services .clickable-image2 {
+	background-color: #3498db;
+	/* Modern blue for the button */
+	color: white;
+	padding: 14px 25px;
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	font-size: 12px;
+	font-weight: bold;
+	transition: all 0.4s ease;
+	max-width: 80px;
+	max-height: 35px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 15px;
+	position: relative;
+	overflow: hidden;
+	margin-top: -10px;
+	margin-left: 42px;
+}
+
+/* Hover and active states for clickable-image */
+#services .clickable-image2:hover {
+	background-color: #2980b9;
+	transform: translateY(-3px);
+	box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+#services .clickable-image2:active {
+	background-color: #1f78a7;
+	transform: translateY(1px);
+}
 
 
 /* Styling for clickable-image4 (custom style for Cluster Precinct) */
@@ -831,7 +866,9 @@ p {
 
 /* Download Button Styling */
 #downloadBtn,
-#landscapeDownloadBtn {
+#landscapeDownloadBtn,
+#downloadDouble1,
+#downloadDouble2 {
 	display: inline-block;
 	text-align: center;
 	margin-top: 15px;
@@ -840,7 +877,9 @@ p {
 }
 
 #downloadBtn button,
-#landscapeDownloadBtn button {
+#landscapeDownloadBtn button,
+#downloadDouble1 button,
+#downloadDouble2 button {
 	padding: 12px 20px;
 	font-size: 26px;
 	background-color: #4CAF50;
@@ -853,7 +892,9 @@ p {
 
 /* Hover and Focus Effects for the Download Button */
 #downloadBtn button:hover,
-#landscapeDownloadBtn button:hover {
+#landscapeDownloadBtn button:hover,
+#downloadDouble1 button:hover,
+#downloadDouble2 button:hover {
 	background-color: #45a049;
 	/* Darker green */
 	transform: scale(1.05);
@@ -861,7 +902,9 @@ p {
 }
 
 #downloadBtn button:focus,
-#landscapeDownloadBtn button:focus {
+#landscapeDownloadBtn button:focus,
+#downloadDouble1 button:focus,
+#downloadDouble2 button:focus {
 	outline: none;
 	/* Remove focus outline */
 	box-shadow: 0 0 5px rgba(0, 255, 0, 0.5);
@@ -870,7 +913,9 @@ p {
 
 /* Button Disabled State (when download link is hidden) */
 #downloadBtn[style="display: none;"] button,
-#landscapeDownloadBtn[style="display: none;"] button {
+#landscapeDownloadBtn[style="display: none;"] button,
+#downloadDouble1[style="display: none;"] button,
+#downloadDouble2[style="display: none;"] button {
 	background-color: #ccc;
 	cursor: not-allowed;
 }
@@ -1024,6 +1069,11 @@ p {
 	background-color: #0056b3;
 }
 
+.image-container img {
+	max-width: 100%;
+	display: block;
+	margin-bottom: 10px;
+}
 
 
 
@@ -1118,6 +1168,34 @@ p {
 		background-color: #45a049;
 	}
 
+
+	/* Adjusting the Download Button */
+	#downloadDouble1,
+	#downloadDouble2 {
+		margin-top: 10px;
+		font-size: 12px;
+		display: inline-block;
+		/* Make sure the button appears */
+	}
+
+	/* Adjust button inside the link */
+	#downloadDouble1 button,
+	#downloadDouble2 button {
+		font-size: 17px;
+		padding: 5px 10px;
+		/* Adjust button size */
+		background-color: #4CAF50;
+		/* Add styling for button */
+		color: white;
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+	}
+	#downloadDouble1 button:hover,
+	#downloadDouble2 button:hover {
+		background-color: #45a049;
+	}
+
 	/* Prevent horizontal scrolling in the modal */
 	#serviceModal .modal-content {
 		width: 100%;
@@ -1182,7 +1260,7 @@ p {
 		background-color: #45a049;
 	}
 
-	
+
 
 }
 
