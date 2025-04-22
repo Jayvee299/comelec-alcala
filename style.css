@@ -1143,6 +1143,33 @@ p {
 		text-align: justify;
 	}
 
+	
+	/* Landscape Modal */
+	#doubleImageModal .modal-content {
+		max-width: 300px;
+		align-items: center;
+		margin-top: 300px;
+		max-height: 600px;
+		transform: scale(1.2);
+	}
+
+	#doubleImageModalImage {
+		max-width: 90%;
+		height: max-content;
+		display: block;
+		margin: 0 auto;
+	}
+
+	#doubleImageModalTitle {
+		font-size: 18px;
+		text-align: center;
+	}
+
+	#doubleImageModalDesc {
+		font-size: 14px;
+		text-align: justify;
+	}
+
 	/* Adjusting the Download Button */
 	#landscapeDownloadBtn {
 		margin-top: 10px;
@@ -1181,7 +1208,7 @@ p {
 	/* Adjust button inside the link */
 	#downloadDouble1 button,
 	#downloadDouble2 button {
-		font-size: 17px;
+		font-size: 10px;
 		padding: 5px 10px;
 		/* Adjust button size */
 		background-color: #4CAF50;
