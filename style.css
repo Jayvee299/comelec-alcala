@@ -51,6 +51,11 @@ a {
 	color: #BFECFF;
 }
 
+
+#finder h4 span {
+	color: #BFECFF;
+}
+
 /* Larger font size for tablet and above */
 @media (min-width: 320px) {
 	.brand h1 {
@@ -457,7 +462,24 @@ p {
 
 }
 
+#finder {
+	max-width: 1300px;
+	margin: 0 auto;
+	padding: 70px;
+	justify-content: flex-start;
+
+}
+
 #map h4 {
+	position: relative;
+	align-items: center;
+	text-align: center;
+	font-weight: 300;
+	font-size: 50px;
+	letter-spacing: 1rem;
+	margin-top: 20px;
+}
+#finder h4 {
 	position: relative;
 	align-items: center;
 	text-align: center;
@@ -475,6 +497,8 @@ p {
 	margin-bottom: 30px;
 	border-radius: 10px;
 }
+
+
 
 @media (max-width: 768px) {
 	.hero.container img {
@@ -505,6 +529,28 @@ p {
 		letter-spacing: 1rem;
 		white-space: nowrap;
 		margin-top: -150px;
+		/* Prevent line breaks */
+	}
+
+	#finder {
+		max-height: 850px;
+	}
+
+	.hero.container img {
+		max-width: 90%;
+		margin-top: 150px;
+		padding: 4px;
+	}
+
+	#finder h4 {
+		display: inline;
+		align-items: center;
+		text-align: center;
+		font-weight: 300;
+		font-size: 20px;
+		letter-spacing: 1rem;
+		white-space: nowrap;
+		margin-top: -100px;
 		/* Prevent line breaks */
 	}
 
