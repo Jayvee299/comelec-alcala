@@ -298,14 +298,12 @@ p {
 @media (max-width: 768px) {
 	.text {
 		font-size: 4rem;
-		letter-spacing: 6px;
 	}
 }
 
 @media (max-width: 576px) {
 	.text {
 		font-size: 1.7rem;
-		letter-spacing: 2px;
 		margin-left: 3px;
 		margin-top: 300px;
 	}
@@ -319,14 +317,13 @@ p {
 
 @media (max-width: 375px) {
 	.text {
-		font-size: 18px;
-		letter-spacing: 3px;
+		font-size: 15px;
 		margin-left: 3px;
 	}
 
 	#hero img {
 		max-width: 220px;
-		margin-top: 200px;
+		margin-top: 50px;
 	}
 
 }
