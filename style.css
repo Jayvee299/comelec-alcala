@@ -964,7 +964,8 @@ p {
 #downloadBtn,
 #landscapeDownloadBtn,
 #downloadDouble1,
-#downloadDouble2 {
+#downloadDouble2,
+#downloadDouble3 {
 	display: inline-block;
 	text-align: center;
 	margin-top: 15px;
@@ -975,7 +976,8 @@ p {
 #downloadBtn button,
 #landscapeDownloadBtn button,
 #downloadDouble1 button,
-#downloadDouble2 button {
+#downloadDouble2 button,
+#downloadDouble3 button {
 	padding: 12px 20px;
 	font-size: 26px;
 	background-color: #4CAF50;
@@ -990,7 +992,8 @@ p {
 #downloadBtn button:hover,
 #landscapeDownloadBtn button:hover,
 #downloadDouble1 button:hover,
-#downloadDouble2 button:hover {
+#downloadDouble2 button:hover,
+#downloadDouble3 button:hover {
 	background-color: #45a049;
 	/* Darker green */
 	transform: scale(1.05);
@@ -1000,7 +1003,8 @@ p {
 #downloadBtn button:focus,
 #landscapeDownloadBtn button:focus,
 #downloadDouble1 button:focus,
-#downloadDouble2 button:focus {
+#downloadDouble2 button:focus,
+#downloadDouble3 button:focus {
 	outline: none;
 	/* Remove focus outline */
 	box-shadow: 0 0 5px rgba(0, 255, 0, 0.5);
@@ -1011,7 +1015,8 @@ p {
 #downloadBtn[style="display: none;"] button,
 #landscapeDownloadBtn[style="display: none;"] button,
 #downloadDouble1[style="display: none;"] button,
-#downloadDouble2[style="display: none;"] button {
+#downloadDouble2[style="display: none;"] button,
+#downloadDouble3[style="display: none;"] button {
 	background-color: #ccc;
 	cursor: not-allowed;
 }
@@ -1294,7 +1299,8 @@ p {
 
 	/* Adjusting the Download Button */
 	#downloadDouble1,
-	#downloadDouble2 {
+	#downloadDouble2
+	#downloadDouble3 {
 		margin-top: 10px;
 		font-size: 12px;
 		display: inline-block;
@@ -1303,7 +1309,8 @@ p {
 
 	/* Adjust button inside the link */
 	#downloadDouble1 button,
-	#downloadDouble2 button {
+	#downloadDouble2 button,
+	#downloadDouble3 button  {
 		font-size: 10px;
 		padding: 5px 10px;
 		/* Adjust button size */
@@ -1316,7 +1323,8 @@ p {
 	}
 
 	#downloadDouble1 button:hover,
-	#downloadDouble2 button:hover {
+	#downloadDouble2 button:hover,
+	#downloadDouble3 button:hover {
 		background-color: #45a049;
 	}
 
