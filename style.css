@@ -48,12 +48,12 @@ a {
 }
 
 #map h4 span {
-	color: #BFECFF;
+	color: #006aff;
 }
 
 
 #finder h4 span {
-	color: #BFECFF;
+	color: #006aff;
 }
 
 /* Larger font size for tablet and above */
@@ -479,6 +479,7 @@ p {
 	letter-spacing: 1rem;
 	margin-top: 20px;
 }
+
 #finder h4 {
 	position: relative;
 	align-items: center;
@@ -499,6 +500,29 @@ p {
 }
 
 
+.hero button {
+	background-color: #004aad;
+	/* Deep blue */
+	color: white;
+	border: none;
+	padding: 12px 24px;
+	font-size: 16px;
+	border-radius: 6px;
+	cursor: pointer;
+	transition: background-color 0.3s ease, transform 0.2s ease;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hero button:hover {
+	background-color: #428df6;
+	transform: translateY(-2px);
+}
+
+.hero a {
+	text-decoration: none;
+	/* Remove underline */
+}
 
 @media (max-width: 768px) {
 	.hero.container img {
@@ -547,12 +571,38 @@ p {
 		align-items: center;
 		text-align: center;
 		font-weight: 300;
-		font-size: 20px;
+		font-size: 27px;
 		letter-spacing: 1rem;
 		white-space: nowrap;
 		margin-top: -100px;
 		/* Prevent line breaks */
 	}
+
+	.hero button {
+		background-color: #004aad;
+		/* Deep blue */
+		color: white;
+		border: none;
+		padding: 12px 24px;
+		font-size: 12px;
+		border-radius: 6px;
+		cursor: pointer;
+		transition: background-color 0.3s ease, transform 0.2s ease;
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		margin-top: 80px;
+	}
+
+	.hero button:hover {
+		background-color: #428df6;
+		transform: translateY(-2px);
+	}
+
+	.hero a {
+		text-decoration: none;
+		/* Remove underline */
+	}
+
 
 }
 
@@ -1189,7 +1239,7 @@ p {
 		text-align: justify;
 	}
 
-	
+
 	/* Landscape Modal */
 	#doubleImageModal .modal-content {
 		max-width: 300px;
@@ -1264,6 +1314,7 @@ p {
 		border-radius: 5px;
 		cursor: pointer;
 	}
+
 	#downloadDouble1 button:hover,
 	#downloadDouble2 button:hover {
 		background-color: #45a049;
