@@ -282,18 +282,16 @@ p {
 
 /* .text (Main Title) */
 .text {
-	font-size: 7rem;
+	font-size: 3rem;
 	font-weight: bold;
 	color: white;
-	text-transform: uppercase;
-	letter-spacing: 9px;
 	animation: fadeInUp 2s ease-out;
 	text-shadow: 10px 2px 20px rgba(2, 130, 250, 0.5);
 	white-space: nowrap;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	margin-top: 200px;
+	margin-top: 300px;
 }
 
 /* Media Queries for .text (Main Title) */
@@ -306,15 +304,15 @@ p {
 
 @media (max-width: 576px) {
 	.text {
-		font-size: 2rem;
-		letter-spacing: 3px;
+		font-size: 1.7rem;
+		letter-spacing: 2px;
 		margin-left: 3px;
 		margin-top: 300px;
 	}
 
 	#hero img {
 		max-width: 220px;
-		margin-top: 40px;
+		margin-top: 60px;
 	}
 
 }
@@ -1850,7 +1848,7 @@ p {
 	}
 
 	#about .section-title span {
-		color: #BFECFF;
+		color: #006aff;
 	}
 }
 
@@ -1929,7 +1927,7 @@ p {
 }
 
 .section-title span {
-	color: #BFECFF;
+	color: #006aff;
 }
 
 #contact .section-title {
@@ -1944,7 +1942,7 @@ p {
 }
 
 #contact .section-title span {
-	color: #BFECFF;
+	color: #006aff;
 }
 
 
