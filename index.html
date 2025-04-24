@@ -309,9 +309,10 @@
           <div class="info-container">
             <!-- Barangay Map Section -->
             <div class="service-container">
-              <h4>Barangay Map</h4>
-              <button class="clickable-image" data-img="img/brgy/LAOAC.png" data-name="" data-desc=""
-                data-type="portrait">View</button>
+              <h5>Barangay Map</h5>
+              <button class="clickable-image2"
+                data-images="img/brgy/LAOAC.png,img/brgy/LAOAC VS. ANULID.png,img/brgy/LAOAC VS. SAN VICENTE.png"
+                data-name="" data-desc="" data-type="double">View</button>
             </div>
             <!-- Voting Center Section -->
             <div class="service-container">
@@ -677,17 +678,18 @@
     </div>
   </div>
 
-  <!-- Modal for displaying two images stacked vertically -->
+  <!-- Modal for displaying three images stacked vertically -->
   <div id="doubleImageModal" class="modal">
     <div class="modal-content" style="max-height: 120vh;">
       <div class="header2">
-        <h2 id="doubleModalTitle">Double Image View</h2>
+        <h2 id="doubleModalTitle"></h2>
       </div>
 
       <!-- Vertical stack of images -->
       <div style="display: flex; flex-direction: column; gap: 20px; align-items: center;">
         <img id="doubleImage1" src="" alt="Image 1" style="max-width: 100%; height: auto;" />
         <img id="doubleImage2" src="" alt="Image 2" style="max-width: 100%; height: auto;" />
+        <img id="doubleImage3" src="" alt="Image 3" style="max-width: 100%; height: auto;" />
       </div>
 
       <p id="doubleModalDesc" style="text-align: center; margin-top: 20px;"></p>
@@ -697,8 +699,11 @@
         <a id="downloadDouble1" href="#" download style="display: none; margin-right: 10px;">
           <button>Download Image 1</button>
         </a>
-        <a id="downloadDouble2" href="#" download style="display: none;">
+        <a id="downloadDouble2" href="#" download style="display: none; margin-right: 10px;">
           <button>Download Image 2</button>
+        </a>
+        <a id="downloadDouble3" href="#" download style="display: none;">
+          <button>Download Image 3</button>
         </a>
       </div>
     </div>
@@ -919,95 +924,107 @@
   <!-- End Footer -->
   <script src="./app.js"></script>
   <script>
-    // Get the double modal and its elements
+    // ==================== Get Modal Elements ====================
     var doubleImageModal = document.getElementById("doubleImageModal");
     var doubleModalTitle = document.getElementById("doubleModalTitle");
     var doubleImage1 = document.getElementById("doubleImage1");
     var doubleImage2 = document.getElementById("doubleImage2");
+    var doubleImage3 = document.getElementById("doubleImage3");
     var doubleModalDesc = document.getElementById("doubleModalDesc");
     var downloadDouble1 = document.getElementById("downloadDouble1");
     var downloadDouble2 = document.getElementById("downloadDouble2");
+    var downloadDouble3 = document.getElementById("downloadDouble3");
 
-    // Add event listener for clickable-image2
-    var clickableImage2 = document.querySelectorAll(".clickable-image2");
-    clickableImage2.forEach(function (button) {
-      button.addEventListener("click", function () {
-        var images = this.getAttribute("data-images").split(",");
-        var name = this.getAttribute("data-name");
-        var desc = this.getAttribute("data-desc");
-
-        doubleModalTitle.textContent = name;
-        doubleImage1.src = images[0];
-        doubleImage2.src = images[1];
-        doubleModalDesc.textContent = desc;
-
-        downloadDouble1.href = images[0];
-        downloadDouble2.href = images[1];
-        downloadDouble1.style.display = "inline-block";
-        downloadDouble2.style.display = "inline-block";
-
-        doubleImageModal.style.display = "block";
-      });
-    });
-    // Close modal when clicking outside
-    window.addEventListener("click", function (event) {
-      if (event.target === doubleImageModal) {
-        doubleImageModal.style.display = "none";
-        downloadDouble1.style.display = "none";
-        downloadDouble2.style.display = "none";
-      }
-    });
-    // Get modal and its elements for both modals
     var serviceModal = document.getElementById("serviceModal");
     var landscapeModal = document.getElementById("landscapeModal");
 
     var modalTitle = document.getElementById("modalTitle");
     var modalImage = document.getElementById("modalImage");
     var modalDesc = document.getElementById("modalDesc");
-    var downloadBtn = document.getElementById("downloadBtn"); // Download button for portrait images
+    var downloadBtn = document.getElementById("downloadBtn");
 
     var landscapeModalTitle = document.getElementById("landscapeModalTitle");
     var landscapeModalImage = document.getElementById("landscapeModalImage");
     var landscapeModalDesc = document.getElementById("landscapeModalDesc");
-    var landscapeDownloadBtn = document.getElementById("landscapeDownloadBtn"); // Download button for landscape images
+    var landscapeDownloadBtn = document.getElementById("landscapeDownloadBtn");
 
     var closeModal = document.getElementById("closeModal");
     var closeLandscapeModal = document.getElementById("closeLandscapeModal");
 
-    // Select all View buttons
+    // ==================== Triple Image Modal ====================
+    var clickableImage2 = document.querySelectorAll(".clickable-image2");
+    clickableImage2.forEach(function (button) {
+      button.addEventListener("click", function () {
+        var images = this.getAttribute("data-images").split(",");
+        var name = this.getAttribute("data-name") || "";
+        var desc = this.getAttribute("data-desc") || "";
+
+        // Set modal title and description
+        doubleModalTitle.textContent = name;
+        doubleModalDesc.textContent = desc;
+
+        // Set image sources
+        doubleImage1.src = images[0] || "";
+        doubleImage2.src = images[1] || "";
+        doubleImage3.src = images[2] || "";
+
+        // Set download links
+        downloadDouble1.href = images[0] || "#";
+        downloadDouble2.href = images[1] || "#";
+        downloadDouble3.href = images[2] || "#";
+
+        // Show/hide download buttons based on image availability
+        downloadDouble1.style.display = images[0] ? "inline-block" : "none";
+        downloadDouble2.style.display = images[1] ? "inline-block" : "none";
+        downloadDouble3.style.display = images[2] ? "inline-block" : "none";
+
+        doubleImageModal.style.display = "block";
+      });
+    });
+
+    // Close the triple modal when clicking outside
+    window.addEventListener("click", function (event) {
+      if (event.target === doubleImageModal) {
+        doubleImageModal.style.display = "none";
+        downloadDouble1.style.display = "none";
+        downloadDouble2.style.display = "none";
+        downloadDouble3.style.display = "none";
+      }
+    });
+
+    // ==================== Single Image Modals ====================
     var clickableImages = document.querySelectorAll(".clickable-image, .clickable-image4");
 
-    // Open the modal based on the image type (portrait or landscape) for View buttons
     clickableImages.forEach(function (image) {
       image.addEventListener("click", function () {
         var img = this.getAttribute("data-img");
-        var name = this.getAttribute("data-name");
-        var desc = this.getAttribute("data-desc");
+        var name = this.getAttribute("data-name") || "";
+        var desc = this.getAttribute("data-desc") || "";
         var type = this.getAttribute("data-type");
 
         if (type === "landscape") {
           landscapeModalTitle.textContent = name;
           landscapeModalImage.src = img;
           landscapeModalDesc.textContent = desc;
-          landscapeDownloadBtn.href = img; // Set the download link for landscape
+          landscapeDownloadBtn.href = img;
+          landscapeDownloadBtn.style.display = "inline-block";
           landscapeModal.style.display = "block";
-          landscapeDownloadBtn.style.display = "inline-block"; // Show the download button
         } else {
           modalTitle.textContent = name;
           modalImage.src = img;
           modalDesc.textContent = desc;
-          downloadBtn.href = img; // Set the download link for portrait
+          downloadBtn.href = img;
+          downloadBtn.style.display = "inline-block";
           serviceModal.style.display = "block";
-          downloadBtn.style.display = "inline-block"; // Show the download button
         }
       });
     });
 
-    // Close the service modal
+    // Close the portrait modal
     if (closeModal) {
       closeModal.addEventListener("click", function () {
         serviceModal.style.display = "none";
-        downloadBtn.style.display = "none"; // Hide the download button when modal is closed
+        downloadBtn.style.display = "none";
       });
     }
 
@@ -1015,18 +1032,18 @@
     if (closeLandscapeModal) {
       closeLandscapeModal.addEventListener("click", function () {
         landscapeModal.style.display = "none";
-        landscapeDownloadBtn.style.display = "none"; // Hide the download button when modal is closed
+        landscapeDownloadBtn.style.display = "none";
       });
     }
 
-    // Close the modal when the user clicks anywhere outside the modal
+    // Close single modals when clicking outside
     window.addEventListener("click", function (event) {
       if (event.target === serviceModal) {
         serviceModal.style.display = "none";
-        downloadBtn.style.display = "none"; // Hide the download button when modal is closed
+        downloadBtn.style.display = "none";
       } else if (event.target === landscapeModal) {
         landscapeModal.style.display = "none";
-        landscapeDownloadBtn.style.display = "none"; // Hide the download button when modal is closed
+        landscapeDownloadBtn.style.display = "none";
       }
     });
 
