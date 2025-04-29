@@ -46,6 +46,16 @@ a {
 .brand h1 span {
 	color: rgb(0, 242, 255);
 }
+.brand h3 {
+	font-size: 18px;
+	color: white;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.brand h3 span {
+	color: rgb(0, 242, 255);
+}
 
 #map h4 span {
 	color: #006aff;
@@ -62,7 +72,10 @@ a {
 		font-size: 2rem;
 		margin-left: -5px;
 	}
-
+	.brand h3 {
+		font-size: 17px;
+		margin-left: -5px;
+	}
 	.brand img {
 		max-width: 50px;
 		margin-left: -10px;
@@ -233,8 +246,6 @@ p {
 #header .hamburger.active .bar::after {
 	top: 0;
 }
-
-
 
 
 /* End Header section */
@@ -489,7 +500,7 @@ p {
 .hero.container img {
 	max-width: 60%;
 	height: auto;
-	margin-top: px;
+	margin-top: 100px;
 	margin-bottom: 30px;
 	border-radius: 10px;
 }
