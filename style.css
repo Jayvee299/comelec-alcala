@@ -46,6 +46,7 @@ a {
 .brand h1 span {
 	color: rgb(0, 242, 255);
 }
+
 .brand h3 {
 	font-size: 18px;
 	color: white;
@@ -72,10 +73,12 @@ a {
 		font-size: 2rem;
 		margin-left: -5px;
 	}
+
 	.brand h3 {
 		font-size: 17px;
 		margin-left: -5px;
 	}
+
 	.brand img {
 		max-width: 50px;
 		margin-left: -10px;
@@ -468,6 +471,25 @@ p {
 
 }
 
+
+#prayer {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 70px;
+	justify-content: flex-start;
+
+}
+
+#prayer h4 {
+	position: relative;
+	align-items: center;
+	text-align: center;
+	font-weight: 300;
+	font-size: 40px;
+	letter-spacing: 1rem;
+	margin-bottom: -80px;
+}
+
 #finder {
 	max-width: 1300px;
 	margin: 0 auto;
@@ -560,6 +582,19 @@ p {
 		white-space: nowrap;
 		margin-top: -150px;
 		/* Prevent line breaks */
+	}
+
+	#prayer h4 {
+		position: relative;
+		display: inline;
+		align-items: center;
+		text-align: center;
+		font-weight: 300;
+		font-size: 28px;
+		letter-spacing: 1rem;
+		white-space: nowrap;
+		padding: 80px;
+		margin-top: -200px;
 	}
 
 	#finder {
@@ -1098,6 +1133,7 @@ p {
 		text-transform: uppercase;
 		letter-spacing: 1rem;
 		text-align: center;
+		margin-top: -50px;
 	}
 }
 
@@ -1305,8 +1341,7 @@ p {
 
 	/* Adjusting the Download Button */
 	#downloadDouble1,
-	#downloadDouble2
-	#downloadDouble3 {
+	#downloadDouble2 #downloadDouble3 {
 		margin-top: 10px;
 		font-size: 12px;
 		display: inline-block;
@@ -1316,7 +1351,7 @@ p {
 	/* Adjust button inside the link */
 	#downloadDouble1 button,
 	#downloadDouble2 button,
-	#downloadDouble3 button  {
+	#downloadDouble3 button {
 		font-size: 10px;
 		padding: 5px 10px;
 		/* Adjust button size */
