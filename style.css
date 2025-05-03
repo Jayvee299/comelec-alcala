@@ -631,6 +631,7 @@ p {
 	font-size: 50px;
 	letter-spacing: 1rem;
 	margin-top: 20px;
+	margin-bottom: 50px;
 }
 
 /* Image Styling */
@@ -655,6 +656,7 @@ p {
 	transition: background-color 0.3s ease, transform 0.2s ease;
 	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	margin-top: 20px;
 }
 
 .hero button:hover {
@@ -746,9 +748,15 @@ p {
 		margin-top: -150px;
 	}
 
-	#finder {
-		max-height: 850px;
-	}
+	
+#finder {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 70px;
+	justify-content: flex-start;
+	margin-top: -50px;
+
+}
 
 	.hero.container img {
 		max-width: 90%;
@@ -1091,28 +1099,6 @@ p {
 		letter-spacing: 1.8rem;
 	}
 }
-
-/* ✅ Large Desktop (1440px and above) */
-@media (min-width: 1440px) {
-	.slider {
-		transform: scale(1.4);
-	}
-
-	.slide {
-		background-size: cover;
-	}
-
-	#reminder .container2 {
-		margin-top: 80px;
-		margin-bottom: 160px;
-	}
-
-	#reminder h4 {
-		font-size: 42px;
-		letter-spacing: 2rem;
-	}
-}
-
 
 
 /* Services Section */
