@@ -29,7 +29,7 @@
                 target="_blank" data-after="Ballot Template">Ballot Template</a></li>
             <li><a href="#reminder" data-after="Reminder">Reminder</a></li>
             <li><a href="#services" data-after="Service">Barangays</a></li>
-                        <li><a href="#map" data-after="Map">Map</a></li>
+            <li><a href="#map" data-after="Map">Map</a></li>
           </ul>
         </div>
       </div>
@@ -41,11 +41,31 @@
   <!-- Hero Section  -->
   <section id="hero">
     <div class="hero container">
-      <div class="text">Precinct Finder, Voters Information Sheet,<br><br>Voter's Assistance Desk,<br><br>Polling Place ATBPA Website</div>
+      <div class="text">Precinct Finder, Voters Information Sheet,<br><br>Voter's Assistance Desk,<br><br>Polling Place
+        ATBPA Website</div>
       <img src="img/image 578.png" alt="">
     </div>
   </section>
   <!-- End Hero Section  -->
+
+
+  <!-- Duplicate Hero Section -->
+  <section id="reminder2">
+    <div class="container2">
+      <h4></h4>
+      <div class="slider2">
+        <div class="slides2">
+          <div class="slide2" style="background-image: url(./img/notice1.png);"></div>
+          <div class="slide2" style="background-image: url(./img/notice2.jpeg);"></div>
+        </div>
+        <!-- Left and Right Arrow Buttons -->
+        <button class="arrow-left2">&#10094;</button>
+        <button class="arrow-right2">&#10095;</button>
+      </div>
+    </div>
+  </section>
+
+
 
 
   <section id="finder">
@@ -59,7 +79,6 @@
   </section>
 
 
-  </section>
   <!-- End Hero Section  -->
   <section id="reminder">
     <div class="container2">
@@ -84,7 +103,7 @@
       <img src="img/prayer.png" alt="ALCALA Map">
     </div>
   </section>
-  
+
 
 
   <!-- Service Section -->
@@ -184,8 +203,8 @@
             <!-- Voting Center Section -->
             <div class="service-container">
               <h5>Voting Center</h5>
-              <button class="clickable-image" data-img="img/voting/CANARVACANAN.png" data-name=""
-                data-desc="" data-type="landscape">View</button>
+              <button class="clickable-image" data-img="img/voting/CANARVACANAN.png" data-name="" data-desc=""
+                data-type="landscape">View</button>
             </div>
             <!-- Cluster Precinct Section -->
             <div class="service-container">
@@ -288,8 +307,8 @@
             <!-- Voting Center Section -->
             <div class="service-container">
               <h5>Voting Center</h5>
-              <button class="clickable-image" data-img="img/voting/KISIKIS.png" data-name=""
-                data-desc="" data-type="portrait">View</button>
+              <button class="clickable-image" data-img="img/voting/KISIKIS.png" data-name="" data-desc=""
+                data-type="portrait">View</button>
             </div>
             <!-- Cluster Precinct Section -->
             <div class="service-container">
@@ -367,8 +386,8 @@
             <!-- Voting Center Section -->
             <div class="service-container">
               <h5>Voting Center</h5>
-              <button class="clickable-image" data-img="img/voting/PINDANGAN CENTRO.png" data-name=""
-                data-desc="" data-type="portrait">View</button>
+              <button class="clickable-image" data-img="img/voting/PINDANGAN CENTRO.png" data-name="" data-desc=""
+                data-type="portrait">View</button>
             </div>
             <!-- Cluster Precinct Section -->
             <div class="service-container">
@@ -419,8 +438,8 @@
             <!-- Voting Center Section -->
             <div class="service-container">
               <h5>Voting Center</h5>
-              <button class="clickable-image" data-img="img/voting/PINDANGAN WEST.png" data-name=""
-                data-desc="" data-type="portrait">View</button>
+              <button class="clickable-image" data-img="img/voting/PINDANGAN WEST.png" data-name="" data-desc=""
+                data-type="portrait">View</button>
             </div>
             <!-- Cluster Precinct Section -->
             <div class="service-container">
@@ -523,8 +542,8 @@
             <!-- Voting Center Section -->
             <div class="service-container">
               <h5>Voting Center</h5>
-              <button class="clickable-image" data-img="img/voting/SAN NICOLAS.png" data-name=""
-                data-desc="" data-type="landscape">View</button>
+              <button class="clickable-image" data-img="img/voting/SAN NICOLAS.png" data-name="" data-desc=""
+                data-type="landscape">View</button>
             </div>
             <!-- Cluster Precinct Section -->
             <div class="service-container">
@@ -881,7 +900,7 @@
           <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png" /></div>
           <div class="contact-info">
             <h1>Phone</h1>
-                        <h2>09954083210</h2>
+            <h2>09954083210</h2>
           </div>
         </div>
         <div class="contact-item">
@@ -1083,6 +1102,40 @@
 
 
 
+
+
+
+
+    let currentIndex2 = 0;
+    const slides2 = document.querySelector('.slides2');
+    const totalSlides2 = document.querySelectorAll('.slide2').length;
+
+    function moveSlide2(index) {
+      currentIndex2 = index;
+      if (currentIndex2 < 0) currentIndex2 = totalSlides2 - 1;
+      if (currentIndex2 >= totalSlides2) currentIndex2 = 0;
+
+      slides2.style.transform = `translateX(-${currentIndex2 * 100}vw)`;
+    }
+
+    // Auto slide (every 10 seconds)
+    setInterval(() => {
+      moveSlide2(currentIndex2 + 1);
+    }, 10000); // 10 seconds (you had 100000 = 100 seconds)
+
+    // Left arrow button event
+    document.querySelector('.arrow-left2').addEventListener('click', () => {
+      moveSlide2(currentIndex2 - 1);
+    });
+
+    // Right arrow button event
+    document.querySelector('.arrow-right2').addEventListener('click', () => {
+      moveSlide2(currentIndex2 + 1);
+    });
+
+
+
+
     // Add event listener to the Ballot Template link
     document.addEventListener('DOMContentLoaded', function () {
       const ballotLink = document.querySelector('a[data-after="Ballot Template"]');
@@ -1091,10 +1144,6 @@
         window.open(this.href, '_blank'); // Open the link in a new tab
       });
     });
-
-
-
-
 
 
 
@@ -1198,6 +1247,12 @@
     updateCandidates(mayorData, 'mayor-section');
     updateCandidates(viceMayorData, 'vice-mayor-section');
     updateCandidates(councilorData, 'councilor-section');
+
+
+
+
+
+
 
 
   </script>
