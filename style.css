@@ -318,8 +318,8 @@ p {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	letter-spacing: 5px;
-	font-family: 'Times New Roman', Times, serif;
+	letter-spacing: 2px;
+	font-weight: 500;
 	margin-top: 180px;
 }
 
