@@ -33,7 +33,7 @@ a {
 .brand img {
 	max-width: 50px;
 	margin-right: 10px;
-	margin-left: -220px;
+	margin-left: -50px;
 }
 
 .brand h1 {
@@ -102,56 +102,6 @@ a {
 		margin-left: -10px;
 	}
 }
-
-/* Tablet (768px to 1023px) */
-@media (min-width: 768px) and (max-width: 1023px) {
-	.brand h1 {
-		font-size: 1.5rem;
-	}
-
-	.brand h3 {
-		font-size: 17px;
-		margin-left: -5px;
-	}
-
-	.brand img {
-		max-width: 60px;
-	}
-}
-
-/* Desktop (1024px to 1439px) */
-@media (min-width: 1024px) and (max-width: 1439px) {
-	.brand h1 {
-		font-size: 2rem;
-	}
-
-	.brand h3 {
-		font-size: 18px;
-	}
-
-	.brand img {
-		max-width: 70px;
-	}
-}
-
-/* Large Desktop (1440px and above) */
-@media (min-width: 1440px) {
-	.brand h1 {
-		font-size: 2.5rem;
-	}
-
-	.brand h3 {
-		font-size: 20px;
-	}
-
-	.brand img {
-		max-width: 80px;
-	}
-}
-
-
-
-
 
 
 
@@ -362,52 +312,15 @@ p {
 
 /* .text (Main Title) */
 .text {
-	font-size: 3rem;
-	font-weight: bold;
+	font-size: 24px;
 	color: white;
 	animation: fadeInUp 2s ease-out;
-	text-shadow: 10px 2px 20px rgba(2, 130, 250, 0.5);
-	white-space: nowrap;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	margin-top: 200px;
-}
-
-/* Large Desktop (1440px and above) */
-@media (min-width: 1440px) {
-	.text {
-		font-size: 6rem;
-	}
-
-	#hero img {
-		max-width: 400px;
-		margin-top: 100px;
-	}
-}
-
-/* Desktop (1024px to 1439px) */
-@media (min-width: 1024px) and (max-width: 1439px) {
-	.text {
-		font-size: 5rem;
-	}
-
-	#hero img {
-		max-width: 350px;
-		margin-top: 90px;
-	}
-}
-
-/* Tablet (768px to 1023px) */
-@media (min-width: 768px) and (max-width: 1023px) {
-	.text {
-		font-size: 4rem;
-	}
-
-	#hero img {
-		max-width: 300px;
-		margin-top: 80px;
-	}
+	letter-spacing: 5px;
+	font-family: 'Times New Roman', Times, serif;
+	margin-top: 180px;
 }
 
 /* Mobile to Tablet (577px to 767px) */
@@ -427,12 +340,12 @@ p {
 	.text {
 		font-size: 1.7rem;
 		margin-left: 3px;
-		margin-top: 300px;
+		margin-top: 250px;
 	}
 
 	#hero img {
 		max-width: 220px;
-		margin-top: 60px;
+		margin-top: 120px;
 	}
 }
 
@@ -445,7 +358,7 @@ p {
 
 	#hero img {
 		max-width: 220px;
-		margin-top: 50px;
+		margin-top: 80px;
 	}
 }
 
@@ -559,44 +472,6 @@ p {
 	}
 }
 
-/* New Media Queries for Larger Screens */
-
-/* Tablet (769px to 1023px) */
-@media (min-width: 769px) and (max-width: 1023px) {
-	.descrip {
-		font-size: 1.7rem;
-		max-width: 75%;
-		margin-top: -15px;
-	}
-
-	.descrip2 {
-		font-size: 18px;
-	}
-}
-
-/* Desktop (1024px to 1439px) */
-@media (min-width: 1024px) and (max-width: 1439px) {
-	.descrip {
-		font-size: 1.9rem;
-		max-width: 70%;
-	}
-
-	.descrip2 {
-		font-size: 19px;
-	}
-}
-
-/* Large Desktop (1440px and above) */
-@media (min-width: 1440px) {
-	.descrip {
-		font-size: 2rem;
-		max-width: 60%;
-	}
-
-	.descrip2 {
-		font-size: 20px;
-	}
-}
 
 /* .hero.container */
 .hero.container {
@@ -685,7 +560,7 @@ p {
 }
 
 #prayer {
-	max-width: 1000px;
+	max-width: 700px;
 	margin: 0 auto;
 	padding: 70px;
 	justify-content: flex-start;
@@ -835,62 +710,6 @@ p {
 
 /* ✅ New Media Queries */
 
-/* Tablet (769px to 1023px) */
-@media (min-width: 769px) and (max-width: 1023px) {
-	.hero.container img {
-		max-width: 70%;
-		margin-top: 60px;
-		transform: scale(1.4);
-	}
-
-	#prayer {
-		max-width: 800px;
-		padding: 60px;
-	}
-
-	#prayer h4 {
-		font-size: 35px;
-		letter-spacing: 1.5rem;
-	}
-}
-
-/* Desktop (1024px to 1439px) */
-@media (min-width: 1024px) and (max-width: 1439px) {
-	.hero.container img {
-		max-width: 60%;
-		margin-top: 40px;
-		transform: scale(1.2);
-	}
-
-	#prayer {
-		max-width: 1000px;
-		padding: 80px;
-	}
-
-	#prayer h4 {
-		font-size: 38px;
-		letter-spacing: 1.8rem;
-	}
-}
-
-/* Large Desktop (1440px and above) */
-@media (min-width: 1440px) {
-	.hero.container img {
-		max-width: 50%;
-		margin-top: 20px;
-		transform: scale(1.1);
-	}
-
-	#prayer {
-		max-width: 1200px;
-		padding: 100px;
-	}
-
-	#prayer h4 {
-		font-size: 42px;
-		letter-spacing: 2rem;
-	}
-}
 
 
 /* End Hero Section */
@@ -1062,48 +881,6 @@ p {
 	#reminder h4 {
 		font-size: 30px;
 		letter-spacing: 1.5rem;
-	}
-}
-
-/* ✅ Small Desktop (769px to 1023px) */
-@media (min-width: 769px) and (max-width: 1023px) {
-	.slider {
-		transform: scale(1.2);
-	}
-
-	.slide {
-		background-size: cover;
-	}
-
-	#reminder .container2 {
-		margin-top: 40px;
-		margin-bottom: 120px;
-	}
-
-	#reminder h4 {
-		font-size: 35px;
-		letter-spacing: 1.5rem;
-	}
-}
-
-/* ✅ Desktop (1024px to 1439px) */
-@media (min-width: 1024px) and (max-width: 1439px) {
-	.slider {
-		transform: scale(1.3);
-	}
-
-	.slide {
-		background-size: cover;
-	}
-
-	#reminder .container2 {
-		margin-top: 60px;
-		margin-bottom: 140px;
-	}
-
-	#reminder h4 {
-		font-size: 38px;
-		letter-spacing: 1.8rem;
 	}
 }
 
