@@ -1438,6 +1438,7 @@ p {
 	transform: scale(0.7);
 	font-family: 'Arial Narrow Bold';
 	letter-spacing: 1rem;
+	margin-top: -100px;
 }
 
 
@@ -1469,7 +1470,19 @@ p {
 	max-width: 100%;
 	height: auto;
 }
-
+.image-stack {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	align-items: center;
+  }
+  
+  /* Control this class to adjust image width */
+  .image-stack img {
+	width: 60%; /* Change to 80%, 60%, etc., as needed */
+	max-width: 600px;
+	height: auto;
+  }
 /* Download Button Styles */
 .download-btn {
 	display: inline-block;
@@ -1708,6 +1721,19 @@ p {
 	#downloadBtn button:hover {
 		background-color: #45a049;
 	}
+	.image-stack {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		align-items: center;
+	  }
+	  
+	  /* Control this class to adjust image width */
+	  .image-stack img {
+		width: 100%; /* Change to 80%, 60%, etc., as needed */
+		max-width: 600px;
+		height: auto;
+	  }
 
 
 
