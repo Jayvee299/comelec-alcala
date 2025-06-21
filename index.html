@@ -2,6 +2,13 @@
 <html lang="en">
 
 <head>
+  <!-- Open Graph meta tags -->
+  <meta property="og:title" content="COMELEC Alcala - Pangasinan" />
+  <meta property="og:description" content="Official website of the Commission on Elections - Alcala, Pangasinan" />
+  <meta property="og:image" content="https://comelec-alcala.github.io/Alcala-Pangasinan/assets/comelec-logo.png" />
+  <meta property="og:url" content="https://comelec-alcala.github.io/Alcala-Pangasinan/" />
+  <meta name="twitter:card" content="summary_large_image">
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
@@ -41,10 +48,11 @@
   <!-- Hero Section  -->
   <section id="hero">
     <div class="hero container">
-      <div class="text">NOTICES <br>Final Testing and Sealing <br>
-        Municipal Board of <br> Canvassers Convening <br>Precinct Finder, Voters Information Sheet,<br>Voter's
-        Assistance Desk,<br>Polling Place
-        <br>Ecumenical Prayer for May <br> 12, 2025 National and Local <br> Elections ATBPA Website
+      <div class="text">MakaBAGOng Halalan <br>Sa MakaBAGOng Filipino,<br>NOTICES, <br>Final Testing and Sealing, <br>
+        Municipal Board of Canvassers Convening, Operation Baklas Precinct Finder, <br>Voters Information
+        Sheet,<br>Early Voting Hours Program <br>Voter's
+        Assistance Desk,<br>Polling Place and
+        <br>Ecumenical Prayer for May <br> 12, 2025 National and Local <br> Elections <br> ATBPA
       </div>
       <img src="img/image 578.png" alt="">
     </div>
@@ -67,6 +75,55 @@
       </div>
     </div>
   </section>
+
+
+
+  <section id="reminder3">
+    <div class="container2">
+      <h4>OPERATION BAKLAS</h4>
+      <div class="slider3">
+        <div class="slides3">
+          <div class="slide3" style="background-image: url(./img/notice4.jfif);"></div>
+          <div class="slide3" style="background-image: url(./img/notice3.jfif);"></div>
+          <div class="slide3" style="background-image: url(./img/baklas.jpg);"></div>
+          <div class="slide3" style="background-image: url(./img/baklas2.jfif);"></div>
+          <div class="slide3" style="background-image: url(./img/baklas3.jfif);"></div>
+          <div class="slide3" style="background-image: url(./img/baklas4.jfif);"></div>
+        </div>
+        <!-- Left and Right Arrow Buttons -->
+        <button class="arrow-left3">&#10094;</button>
+        <button class="arrow-right3">&#10095;</button>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="reminder4">
+    <div class="container2">
+      <h4>EARLY VOTING HOURS</h4>
+      <h6 style="letter-spacing: 0rem;">FOR SENIOR CITIZENS, PWD, AND PREGNANT <br> VOTERS 5:00AM TO 7:00AM <br>THEY CAN
+        STILL VOTE UNTIL 7:00PM</h6>
+      <h6 style="font-weight: 800; letter-spacing: 0rem;"> Express Lane Sa Regular Polling Places</h6>
+      <h6 style="letter-spacing: 0rem;">For Senior Citizens, PWD, Indigenous People (IP), <br> Pregnant, and Escorted
+        Persons </h6>
+
+      <div class="slider4">
+        <div class="slides4">
+          <div class="slide4" style="background-image: url(./img/early.jfif);"></div>
+          <div class="slide4" style="background-image: url(./img/early2.jfif);"></div>
+          <div class="slide4" style="background-image: url(./img/early3.jfif);"></div>
+          <div class="slide4" style="background-image: url(./img/early4.jfif);"></div>
+          <div class="slide4" style="background-image: url(./img/early5.jfif);"></div>
+          <div class="slide4" style="background-image: url(./img/early6.jfif);"></div>
+        </div>
+        <!-- Left and Right Arrow Buttons -->
+        <button class="arrow-left4">&#10094;</button>
+        <button class="arrow-right4">&#10095;</button>
+      </div>
+    </div>
+  </section>
+
 
 
 
@@ -658,11 +715,26 @@
             </div>
           </div>
         </div>
-
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="overall">
+          <img src="img/overall.png" alt="">
+        </div>
 
       </div>
     </div>
+    </div>
   </section>
+
+
+
+
+
+
 
   <!-- Modal for the service item (portrait modal) -->
   <div id="serviceModal" class="modal">
@@ -1135,6 +1207,66 @@
     document.querySelector('.arrow-right2').addEventListener('click', () => {
       moveSlide2(currentIndex2 + 1);
     });
+
+
+    let currentIndex3 = 0;
+    const slides3 = document.querySelector('.slides3');
+    const totalSlides3 = document.querySelectorAll('.slide3').length;
+
+    function moveSlide3(index) {
+      currentIndex3 = index;
+
+      if (currentIndex3 < 0) currentIndex3 = totalSlides3 - 1;
+      if (currentIndex3 >= totalSlides3) currentIndex3 = 0;
+
+      slides3.style.transform = `translateX(-${currentIndex3 * 100}vw)`;
+    }
+
+    // Auto slide (every 10 seconds)
+    setInterval(() => {
+      moveSlide3(currentIndex3 + 1);
+    }, 1000000); // 10 seconds
+
+    // Left arrow button event
+    document.querySelector('.arrow-left3').addEventListener('click', () => {
+      moveSlide3(currentIndex3 - 1);
+    });
+
+    // Right arrow button event
+    document.querySelector('.arrow-right3').addEventListener('click', () => {
+      moveSlide3(currentIndex3 + 1);
+    });
+
+
+
+    let currentIndex4 = 0;
+    const slides4 = document.querySelector('.slides4');
+    const totalSlides4 = document.querySelectorAll('.slide4').length;
+
+    function moveSlide4(index) {
+      currentIndex4 = index;
+
+      if (currentIndex4 < 0) currentIndex4 = totalSlides4 - 1;
+      if (currentIndex4 >= totalSlides4) currentIndex4 = 0;
+
+      slides4.style.transform = `translateX(-${currentIndex4 * 100}vw)`;
+    }
+
+    // Auto slide (every 10 seconds)
+    setInterval(() => {
+      moveSlide4(currentIndex4 + 1);
+    }, 1000000); // 10 seconds
+
+    // Left arrow button event
+    document.querySelector('.arrow-left4').addEventListener('click', () => {
+      moveSlide4(currentIndex4 - 1);
+    });
+
+    // Right arrow button event
+    document.querySelector('.arrow-right4').addEventListener('click', () => {
+      moveSlide4(currentIndex4 + 1);
+    });
+
 
 
 
